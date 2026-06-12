@@ -2,92 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-06-08T19:05:19 IST" name="Default suite" finished-at="2026-06-08T19:05:38 IST" duration-ms="18737">
+  <suite started-at="2026-06-12T11:09:12 IST" name="Default suite" finished-at="2026-06-12T11:09:28 IST" duration-ms="15967">
     <groups>
     </groups>
-    <test started-at="2026-06-08T19:05:19 IST" name="Default test" finished-at="2026-06-08T19:05:38 IST" duration-ms="18737">
-      <class name="tests.NewTest">
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:tests.NewTest@2794eab6]" started-at="2026-06-08T19:05:19 IST" name="beforeMethod" finished-at="2026-06-08T19:05:35 IST" duration-ms="15757" status="PASS">
+    <test started-at="2026-06-12T11:09:12 IST" name="Default test" finished-at="2026-06-12T11:09:28 IST" duration-ms="15967">
+      <class name="tests.verifyValidationMessages">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:tests.verifyValidationMessages@2794eab6]" started-at="2026-06-12T11:09:13 IST" name="beforeMethod" finished-at="2026-06-12T11:09:26 IST" duration-ms="13415" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="enterDataWithDataProvider(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.NewTest@2794eab6]" started-at="2026-06-08T19:05:35 IST" name="enterDataWithDataProvider" data-provider="vehicle_data" finished-at="2026-06-08T19:05:38 IST" duration-ms="2870" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Audi]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Scooter]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[12]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[13]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[06/06/2026]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[4]]>
-              </value>
-            </param>
-            <param index="6">
-              <value>
-                <![CDATA[Yes]]>
-              </value>
-            </param>
-            <param index="7">
-              <value>
-                <![CDATA[2]]>
-              </value>
-            </param>
-            <param index="8">
-              <value>
-                <![CDATA[Petrol]]>
-              </value>
-            </param>
-            <param index="9">
-              <value>
-                <![CDATA[3]]>
-              </value>
-            </param>
-            <param index="10">
-              <value>
-                <![CDATA[598]]>
-              </value>
-            </param>
-            <param index="11">
-              <value>
-                <![CDATA[3000]]>
-              </value>
-            </param>
-            <param index="12">
-              <value>
-                <![CDATA[800]]>
-              </value>
-            </param>
-            <param index="13">
-              <value>
-                <![CDATA[124]]>
-              </value>
-            </param>
-          </params>
+        <test-method signature="f()[pri:0, instance:tests.verifyValidationMessages@2794eab6]" started-at="2026-06-12T11:09:26 IST" name="f" finished-at="2026-06-12T11:09:28 IST" duration-ms="2465" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- enterDataWithDataProvider -->
-      </class> <!-- tests.NewTest -->
+        </test-method> <!-- f -->
+      </class> <!-- tests.verifyValidationMessages -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

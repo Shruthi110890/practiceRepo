@@ -91,5 +91,14 @@ public void selectOptionForRadioButtonNo(By radioButtonNo)
 {
 	driver.findElement(radioButtonNo).click();
 }
+public boolean verifyMandatoryFieldsByCheckingBlueTick(By blueTickMark)
+{
+	boolean flag=false;
+	if(driver.findElement(blueTickMark).isDisplayed())
+	{
+		flag=true;
+	}
+	return flag;
+}
 
 }

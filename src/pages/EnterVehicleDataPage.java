@@ -41,6 +41,7 @@ By totalWeightField=By.xpath("//input[@id='totalweight']");
 By listPriceField=By.xpath("//input[@id='listprice']");
 By licencePlateNumField=By.xpath("//input[@id='licenseplatenumber']");
 By annualMilageField=By.xpath("//input[@id='annualmileage']");
+By blueTickOnFirstPage=By.xpath("//button[@id='nextenterinsurantdata']/ancestor::section//div//span[@style='display: none;']");
 	
 	public void EnterFormData(String makeValue,String modelValue,String cylcapVal,String enginePerformVal,String dom, 
 			String numberOfSeats, String RightHandRadioVal,String numberOfSeatsMotarCycleVal,String fuelType,String payload, String totalWeight, String listPrice, String licencePlateNumber, String annualMilage)
@@ -75,6 +76,11 @@ By annualMilageField=By.xpath("//input[@id='annualmileage']");
 		enterTextData(listPriceField,listPrice);
 		enterTextData(licencePlateNumField,licencePlateNumber);
 		enterTextData(annualMilageField, annualMilage);
+	}
+	
+	public boolean verifyIfTickMarkIsPresentAfterSuccessfulValidation()
+	{
+		return verifyMandatoryFieldsByCheckingBlueTick(blueTickOnFirstPage);
 	}
 
 }
