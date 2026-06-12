@@ -3,12 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="tests.NewTest">
+      <class name="tests.verifyValidationMessages">
         <methods>
+          <include name="enterDataOnFirstPage"/>
+          <include name="verifyIfMandtoryFieldsArePicked"/>
           <include name="beforeMethod"/>
-          <include name="enterDataWithDataProvider" invocation-numbers="0"/>
         </methods>
-      </class> <!-- tests.NewTest -->
+      </class> <!-- tests.verifyValidationMessages -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

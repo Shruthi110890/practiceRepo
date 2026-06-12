@@ -14,13 +14,13 @@ public class verifyValidationMessages {
 	 WebDriver driver;
 	 BrowserUtils utils=new BrowserUtils();
 	ExtractPropertyFileData prop= new ExtractPropertyFileData();
-	 EnterVehicleDataPage vp= new EnterVehicleDataPage(driver);
+	 EnterVehicleDataPage vp;
   @BeforeMethod
-  public void beforeMethod() {
+  public void beforeTest() {
 	  this.driver=utils.launchBrowser();
 		 System.out.println("driver is "+ driver);
 		 driver.get(prop.getProperty("url"));
-	  
+		  vp= new EnterVehicleDataPage(driver);
 		
   }
   @Test
@@ -32,7 +32,7 @@ public class verifyValidationMessages {
 	  vp.EnterFormData("Audi", "Scooter", "12", "13", "06/06/2026", "4", "Yes", "2", "Petrol", "3", "598", "3000", "800", "124");
 	  }
   }
-  @Test
+  @Test(dependsOnMethods={"enterDataOnFirstPage"})
   public void verifyIfMandtoryFieldsArePicked()
   {
 	  Assert.assertEquals(true, vp.verifyIfTickMarkIsPresentAfterSuccessfulValidation(),"all mandatory fields are filled");
